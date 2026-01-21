@@ -1,6 +1,6 @@
-# Generated outputs
-data/outputs/*.csv
-data/outputs/*.png
+# Generated model outputs (ignore everything except folder placeholder)
+data/outputs/*
+!data/outputs/.gitkeep
 
 # Python
 __pycache__/
