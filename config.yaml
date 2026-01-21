@@ -1,0 +1,60 @@
+# Vacancy Shadow Liability (VSL) Configuration
+# Parameters for estimating public costs of vacant properties
+
+scenarios:
+  low:
+    # Direct public costs per vacant unit per year (USD)
+    fire_response_cost: 150
+    police_response_cost: 200
+    code_enforcement_cost: 100
+    demolition_amortized_cost: 50
+    blight_remediation_cost: 75
+
+    # Property tax parameters
+    tax_rate: 0.015  # 1.5% of assessed value
+    assessment_decay_rate: 0.02  # Annual decline in assessed value due to vacancy
+
+    # Present value calculation
+    discount_rate: 0.03  # 3% discount rate
+    projection_years: 10
+
+    # Vacancy impact multiplier (accounts for spillover effects)
+    spillover_multiplier: 1.0
+
+  base:
+    # Direct public costs per vacant unit per year (USD)
+    fire_response_cost: 300
+    police_response_cost: 400
+    code_enforcement_cost: 200
+    demolition_amortized_cost: 100
+    blight_remediation_cost: 150
+
+    # Property tax parameters
+    tax_rate: 0.020  # 2.0% of assessed value
+    assessment_decay_rate: 0.05  # Annual decline in assessed value due to vacancy
+
+    # Present value calculation
+    discount_rate: 0.04  # 4% discount rate
+    projection_years: 10
+
+    # Vacancy impact multiplier (accounts for spillover effects)
+    spillover_multiplier: 1.2
+
+  high:
+    # Direct public costs per vacant unit per year (USD)
+    fire_response_cost: 500
+    police_response_cost: 600
+    code_enforcement_cost: 350
+    demolition_amortized_cost: 200
+    blight_remediation_cost: 300
+
+    # Property tax parameters
+    tax_rate: 0.025  # 2.5% of assessed value
+    assessment_decay_rate: 0.08  # Annual decline in assessed value due to vacancy
+
+    # Present value calculation
+    discount_rate: 0.05  # 5% discount rate
+    projection_years: 10
+
+    # Vacancy impact multiplier (accounts for spillover effects)
+    spillover_multiplier: 1.5
